@@ -11,6 +11,9 @@ var builder = WebApplication.CreateBuilder(args);
 // Ajouter des services nécessaires à l'application
 builder.Services.AddEndpointsApiExplorer();
 
+// Ajouter les services des contrôleurs
+builder.Services.AddControllers();
+
 // Ajouter Swagger pour la documentation de l'API
 builder.Services.AddSwaggerGen(options =>
 {

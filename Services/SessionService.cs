@@ -16,7 +16,7 @@ namespace OCPIApp.Services
         {
             return await _sessionRepository.GetAllSessionsAsync();
         }
-
+        
         public async Task<Session> GetSessionByIdAsync(int id)
         {
             return await _sessionRepository.GetSessionByIdAsync(id);
